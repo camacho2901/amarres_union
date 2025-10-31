@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redireccionando a WhatsApp...</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Número de WhatsApp
+      const phone = "59162367707";
+
+      // Mensaje predeterminado
+      const message = encodeURIComponent("¡Hola! Estoy interesado en invertir en *TORRE GOYA*");
+
+      // Crear enlace final
+      const redirectUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+
+      // Redirigir automáticamente
+      window.location.replace(redirectUrl);
+    });
+  </script>
+</head>
+<body>
+  <p>Redirigiendo a WhatsApp...</p>
+</body>
+</html>
